@@ -1,12 +1,14 @@
-from werkzeug.security import generate_password_hash, check_password_hash
-class User:
-   def __init__(self, id, name, email, password):
-      self.id = id
-      self.name = name
-      self.email = email
-      self._password = generate_password_hash(password)
+from flask_sqlalchemy import SQLAlchemy
 
-   def check_password(self, password):
-        return check_password_hash(self._password, password)
+db = SQLAlchemy()
 
-users = []
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(50))
+    email = db.Column(db.String(50))
+    passwd = db.Column(db.String(10))
+
+    def __init__(self, name, email, __passwd):
+        self.name = name
+        self.email = email
+        self.passwd = __passwd
