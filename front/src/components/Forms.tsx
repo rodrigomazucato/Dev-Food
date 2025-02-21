@@ -20,6 +20,9 @@ function Forms() {
   };
 
   function handleSubmit() {
+    localStorage.setItem("nomeUsuario", nome);
+    localStorage.setItem("nomeEmail", email);
+
     if (validarCampos()) {
       navigate("/Cadastro");
     }
