@@ -31,7 +31,7 @@ function Forms() {
 
   return (
     <div className="space-y-4 p-6 bg-white rounded-md shadow flex flex-col m-6 w-100 h-100">
-      <h1 className="text-3xl text-center text-stone-800 font-bold">
+      <h1 className="text-center font-bold">
         Falta pouco para matar sua fome!
       </h1>
       <h1 className="font-medium text-stone-700">Informe o seu nome</h1>
