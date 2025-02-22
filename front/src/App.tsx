@@ -1,4 +1,4 @@
-import Forms from "./components/Forms";
+import Forms from "./pages/Forms";
 
 function App() {
   return (
@@ -6,7 +6,6 @@ function App() {
       <h1 className="text-3xl text-stone-950 font-bold text-center">
         Cadastre-se
       </h1>
-
       <Forms />
     </div>
   );

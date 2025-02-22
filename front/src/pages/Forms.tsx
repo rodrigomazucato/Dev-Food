@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Button from "../componentes/Button";
 
 function Forms() {
   const navigate = useNavigate();
@@ -53,12 +54,10 @@ function Forms() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       ></input>
-      <button
-        onClick={handleSubmit}
-        className="font-medium text-white bg-red-600 rounded-md p-2 cursor-pointer"
-      >
-        Continuar
-      </button>
+
+      <Button variant="filled" onClick={handleSubmit}>Continuar</Button>
+
+
     </div>
   );
 }
