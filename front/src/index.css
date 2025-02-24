@@ -8,23 +8,25 @@ body{
     color: var(--color-blue);
     font-family: var(--font-roboto-condensed);
   }
+
+  h1{
+    font-size: var(--font-h1);
+  }
+  
+  h2{
+    font-size: var(--font-h2);
+  }
+  
+  h3{
+    font-size: var(--font-h3);
+  }
+  
+  p{
+    font-size: var(--font-p);
+  }
 }
 
-h1{
-  font-size: var(--font-h1);
-}
 
-h2{
-  font-size: var(--font-h2);
-}
-
-h3{
-  font-size: var(--font-h3);
-}
-
-p{
-  font-size: var(--font-p);
-}
 
 
 @theme {
