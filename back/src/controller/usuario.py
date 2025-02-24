@@ -1,4 +1,4 @@
-from back.src.model.repositories import RepositoryUsuario
+from back.src.model.repositories import RepUsuario
 from flask import Blueprint, request
 
 usuario_bp = Blueprint('usuario', __name__)
@@ -9,12 +9,15 @@ def teste():
 
 @usuario_bp.post("/users")
 def create_user():
-    nome = request.json_get('nome')
-    email = request.json_get('email')
-    senha = request.json_get('senha')
+    response = request.json
+    dados = {
+        "nome": response.get('nome'),
+        "email": response.get('email'),
+        "senha": response.get('senha')
+    }
 
-    db_user = RepositoryUsuario()
-    db_user.inserir(nome, email, senha)
+    db_user = RepUsuario()
+    db_user.inserir(**dados)
 
     # user_exists = db.session.get(Usuario, id)
     # if not user_exists:
