@@ -1,12 +1,12 @@
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import Button from "../componentes/Button";
+import Input from "../componentes/Input";
 
 function Forms() {
-  const navigate = useNavigate();
-
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
+  const navigate = useNavigate();
 
   const validarCampos = (): boolean => {
     const nomeTrim = nome.trim();
@@ -30,34 +30,12 @@ function Forms() {
   }
 
   return (
-    <div className="space-y-4 p-6 bg-white rounded-md shadow flex flex-col m-6 w-100 h-100">
-      <h1 className="text-center font-bold">
-        Falta pouco para matar sua fome!
-      </h1>
-      <h1 className="font-medium text-stone-700">Informe o seu nome</h1>
-      <input
-        type="text"
-        id="nome"
-        name="nome"
-        placeholder="Digite o seu nome"
-        className="border border-slate-300 outline-slate-400 px-4 py-2 rounded-md"
-        value={nome}
-        onChange={(e) => setNome(e.target.value)}
-      ></input>
-      <h1 className="font-medium text-stone-700">Informe o seu e-mail</h1>
-      <input
-        type="text"
-        id="email"
-        name="email"
-        placeholder="Digite o seu e-mail"
-        className="border border-slate-300 outline-slate-400 px-4 py-2 rounded-md"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      ></input>
+    <div className="space-y-4 p-8 bg-white rounded-md shadow flex flex-col m-6 w-100 h-100">
+      <Input nome={nome} setNome={setNome} email={email} setEmail={setEmail} />
 
-      <Button variant="filled" onClick={handleSubmit}>Continuar</Button>
-
-
+      <Button variant="filled" onClick={handleSubmit}>
+        Continuar
+      </Button>
     </div>
   );
 }
