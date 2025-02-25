@@ -18,7 +18,7 @@
 
 ## 📝 Sobre o Projeto
 
-O **DevFood** é um clone simplificado do iFood, criado para fins educacionais e experimentação de tecnologias modernas de desenvolvimento web. Nosso objetivo é proporcionar uma experiência semelhante à de um aplicativo de delivery, onde usuários podem navegar por restaurantes, realizar pedidos e acompanhar a entrega em tempo real.
+O **DevFood** é um clone do iFood, criado para fins educacionais e experimentação de tecnologias modernas de desenvolvimento web. Nosso objetivo é proporcionar uma experiência semelhante à de um aplicativo de delivery, onde usuários podem navegar por restaurantes, realizar pedidos e acompanhar a entrega em tempo real.
 
 Atualmente, o DevFood cobre as principais funcionalidades de um app de delivery, como:
 - Cadastro e login de usuários.
@@ -52,7 +52,6 @@ O DevFood é baseado em uma arquitetura modular, separando o frontend e o backen
 
 ### 🔹 Backend:
 - **Flask**: Framework web minimalista para APIs.
-- **SQLite**: Banco de dados leve para armazenamento de pedidos e usuários.
 
 ### 🔹 Frontend:
 - **Vite**: Ferramenta moderna para desenvolvimento frontend rápido.
