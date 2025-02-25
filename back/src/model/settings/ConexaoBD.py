@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from back.src.model.settings.Base import Base
+from src.model.settings.Base import Base
 
 class ConexaoBD:
     def __init__(self):

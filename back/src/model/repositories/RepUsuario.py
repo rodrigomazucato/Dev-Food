@@ -1,7 +1,7 @@
-from back.src.model.classes import Usuario
-from back.src.model.interfaces.IUsuario import InterfaceUsuario
-from back.src.model.settings.ConexaoBD import ConexaoBD
-from back.src.model.classes.Usuario import Usuario
+from src.model.classes import Usuario
+from src.model.interfaces.IUsuario import InterfaceUsuario
+from src.model.settings.ConexaoBD import ConexaoBD
+from src.model.classes.Usuario import Usuario
 
 class RepositoryUsuario(InterfaceUsuario):
     def inserir(self, nome: str, email: str, senha: str, is_admin: bool = False) -> None:

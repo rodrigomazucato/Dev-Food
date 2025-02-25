@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from back.src.model.classes.Usuario import Usuario
+from src.model.classes.Usuario import Usuario
 
 class InterfaceUsuario(ABC):
     @abstractmethod

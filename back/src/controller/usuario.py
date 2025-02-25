@@ -1,4 +1,4 @@
-from back.src.model.repositories import RepUsuario
+from src.model.repositories.RepUsuario import RepositoryUsuario
 from flask import Blueprint, request
 
 usuario_bp = Blueprint('usuario', __name__)
@@ -16,26 +16,5 @@ def create_user():
         "senha": response.get('senha')
     }
 
-    db_user = RepUsuario()
+    db_user = RepositoryUsuario()
     db_user.inserir(**dados)
-
-    # user_exists = db.session.get(Usuario, id)
-    # if not user_exists:
-    #     user = Usuario(name, email, passwd)
-    #     db.session.add(user)
-    #     db.session.flush()
-    #     db.session.commit()
-    #     return 'Created', 201
-    # else:
-    #     user = user_exists
-    #     return 'Bad request', 404
-
-# def get_users():
-#     print('chegou aqui')
-#     users = [{"id": u.id, "name": u.name, "email": u.email}
-#              for u in Usuario.query.with_entities(Usuario.id, Usuario.name, Usuario.email).all()]
-#     return users, 200
-
-# def get_user_by_id(id):
-#     user_filtered = Usuario.query.get(id)
-#     return user_filtered, 200

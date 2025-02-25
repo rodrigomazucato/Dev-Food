@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_cors import CORS
-from back.src.model.repositories.RepUsuario import RepositoryUsuario
+# from back.src.model.repositories.RepUsuario import RepositoryUsuario
 from src.controller.usuario import usuario_bp
 
 app = Flask(__name__)
