@@ -4,17 +4,15 @@
 
 - [Sobre o Projeto](https://github.com/SITechOps/Dev-Food/blob/main/README.md#-sobre-o-projeto)
 - [Arquitetura do Sistema](https://github.com/SITechOps/Dev-Food/blob/main/README.md#%EF%B8%8F-arquitetura-do-sistema)
-- [Recursos Principais](#recursos-principais)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Fluxo de Dados](#fluxo-de-dados)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Instalação](#instalação)
-- [Configuração](#configuração)
-- [Como Usar](#como-usar)
-- [Roadmap](#roadmap)
-- [Contribuição](#contribuição)
-- [Integrantes](#integrantes)
-- [Figma do Projeto](#figma-do-projeto)
+- [Recursos Principais](https://github.com/SITechOps/Dev-Food/blob/main/README.md#-recursos-principais)
+- [Tecnologias Utilizadas](https://github.com/SITechOps/Dev-Food/blob/main/README.md#-tecnologias-utilizadas)
+- [Fluxo de Dados](https://github.com/SITechOps/Dev-Food/blob/main/README.md#-fluxo-de-dados)
+- [Estrutura do Projeto]()
+- [Instalação](https://github.com/SITechOps/Dev-Food/blob/main/README.md#-instala%C3%A7%C3%A3o))
+- [Roadmap](https://github.com/SITechOps/Dev-Food/blob/main/README.md#-roadmap)
+- [Contribuição](https://github.com/SITechOps/Dev-Food/blob/main/README.md#-contribui%C3%A7%C3%A3o)
+- [Integrantes](https://github.com/SITechOps/Dev-Food/blob/main/README.md#-integrantes-do-projeto)
+- [Figma do Projeto](https://github.com/SITechOps/Dev-Food/blob/main/README.md#-figma-do-projeto)
 
 ## 📝 Sobre o Projeto
 
