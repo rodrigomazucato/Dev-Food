@@ -2,7 +2,7 @@
 
 ## 📖 Índice
 
-- [Sobre o Projeto](#sobre-o-projeto)
+- [Sobre o Projeto](#Sobre o Projeto)
 - [Arquitetura do Sistema](#arquitetura-do-sistema)
 - [Recursos Principais](#recursos-principais)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
