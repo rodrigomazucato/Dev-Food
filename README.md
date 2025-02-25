@@ -76,13 +76,13 @@ O DevFood é baseado em uma arquitetura modular, separando o frontend e o backen
 1. Clone o repositório:
 
    ```sh
-   git clone https://github.com/usuario/repositorio.git
+   git clone https://github.com/SITechOps/Dev-Food.git
    ```
 
 2. Entre no diretório do backend:
 
    ```sh
-   cd backend
+   cd back
    ```
 
 3. Crie um ambiente virtual e ative:
