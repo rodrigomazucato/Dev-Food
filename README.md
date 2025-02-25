@@ -53,7 +53,7 @@ O DevFood é baseado em uma arquitetura modular, separando o frontend e o backen
 ### 🔹 Frontend:
 - **Vite**: Ferramenta moderna para desenvolvimento frontend rápido.
 - **Tailwind CSS**: Framework CSS para estilização eficiente e responsiva.
-- **React (Futuro)**: Planejamos migrar para React para maior escalabilidade.
+- **React**: Planejamos migrar para React para maior escalabilidade.
 
 ## 🔄 Fluxo de Dados
 
