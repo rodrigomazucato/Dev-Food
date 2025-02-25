@@ -172,6 +172,11 @@ Contribuições são bem-vindas! Para contribuir:
       <td><a href="https://www.linkedin.com/in/guilherme-santos-7249b91a4/"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white" width="90" height="26"></a></td>
   </tr>
   <tr>
+    <td>Joselaine Romão</td>
+    <td><a href="https://github.com/joselainejrs/"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a></td>
+      <td><a href="https://www.linkedin.com/in/joselaine-soares"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white" width="90" height="26"></a></td>
+  </tr>
+  <tr>
     <td>Rodrigo Mazucato</td>
     <td><a href="https://github.com/RodrigoMazucato"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a></td>
       <td><a href="https://www.linkedin.com/in/rodrigo-mazucato-49238a1b6/"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white" width="90" height="26"></a></td>
