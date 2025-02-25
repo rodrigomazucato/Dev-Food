@@ -1,10 +1,5 @@
 # 🍽️ Bem-vindo ao projeto DevFood! - TechOps
 
-![GitHub Repo stars](https://img.shields.io/github/stars/usuario/repositorio?style=for-the-badge)
-![GitHub license](https://img.shields.io/github/license/usuario/repositorio?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/usuario/repositorio?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/usuario/repositorio?style=for-the-badge)
-
 ## 📖 Índice
 
 - [Sobre o Projeto](#sobre-o-projeto)
