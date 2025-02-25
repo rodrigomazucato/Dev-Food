@@ -3,7 +3,7 @@
 ## 📖 Índice
 
 - [Sobre o Projeto](https://github.com/SITechOps/Dev-Food/blob/main/README.md#-sobre-o-projeto)
-- [Arquitetura do Sistema](#arquitetura-do-sistema)
+- [Arquitetura do Sistema](https://github.com/SITechOps/Dev-Food/blob/main/README.md#%EF%B8%8F-arquitetura-do-sistema)
 - [Recursos Principais](#recursos-principais)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Fluxo de Dados](#fluxo-de-dados)
