@@ -187,6 +187,7 @@ Contribuições são bem-vindas! Para contribuir:
 ## 🎨 Figma do Projeto
 
 Nosso projeto no Figma contém o escopo, ideias, diagramas de atividades e arquitetura, além de informações gerais e referências. Acesse através do link abaixo:
+
 *[DevFood no Figma](https://www.figma.com/board/YGJoYlCYBBbk1PQ0R2Nk2O/5---Trabalho-DI?node-id=0-1&p=f)*
 ---
 
