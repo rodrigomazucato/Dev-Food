@@ -1,4 +1,3 @@
-import { FormatacaoDados } from "../helpers/FormatacaoDados";
 import { IButtonPropsColors, IButtonPropsVariant } from "../interface/IButton";
 
 export default function Button({
@@ -6,12 +5,13 @@ export default function Button({
   color = "default",
   variant = "filled",
   img = false,
+  onClick
 }: {
   children: React.ReactNode;
   color?: IButtonPropsColors;
   variant?: IButtonPropsVariant;
   img?: boolean;
-  onClick?: () => void;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }) {
   const defaultButtonClasses =
     "font-roboto-condensed font-medium p-4 m-2 rounded-sm";
@@ -43,10 +43,8 @@ export default function Button({
   };
   return (
     <button
-      className={FormatacaoDados(
-        defaultButtonClasses,
-        variants[variant][color]
-      )}
+    className={`${defaultButtonClasses} ${variants[variant][color]}`} 
+    onClick={onClick} 
     >
       {img ? <img src="img/google.svg" alt="" className="w-6 pr-2" /> : null}
       {children}

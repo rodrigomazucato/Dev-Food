@@ -21,6 +21,7 @@ function Forms() {
   };
 
   function handleSubmit() {
+    console.log('oie')
     localStorage.setItem("nomeUsuario", nome);
     localStorage.setItem("nomeEmail", email);
 
@@ -33,7 +34,7 @@ function Forms() {
     <div className="space-y-4 p-8 bg-white rounded-md shadow flex flex-col m-6 w-100 h-100">
       <Input nome={nome} setNome={setNome} email={email} setEmail={setEmail} />
 
-      <Button variant="filled" onClick={handleSubmit}>
+      <Button variant="filled" onClick={handleSubmit} >
         Continuar
       </Button>
     </div>
