@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Boolean
-from back.src.model.settings.base import Base
+from back.src.model.settings.Base import Base
 
 class Usuario(Base):
     __tablename__ = "Usuario"
@@ -8,3 +8,9 @@ class Usuario(Base):
     email = Column(String(50), unique=True)
     senha = Column(String(12))
     is_admin = Boolean
+
+    def __repr__(self):
+        return (
+            f"{self.id} | {self.nome} | {self.email} | "
+            f"{self.senha} | {'Admin' if self.is_admin else 'User'}"
+        )

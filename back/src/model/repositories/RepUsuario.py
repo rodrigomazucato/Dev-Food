@@ -13,3 +13,22 @@ class RepositoryUsuario(InterfaceUsuario):
             except Exception as e:
                 db.sessao.rollback()
                 raise Exception(f"Erro ao salvar usuário no banco de dados: {e}")
+        
+    def selecionar_usuario(self, email_usuario: str) -> Usuario:
+        with ConexaoBD() as db:
+            usuario = (
+                db.sessao
+                .query(Usuario)
+                .filter(Usuario.email == email_usuario)
+                .one_or_none()
+            )
+            return usuario
+        
+    def listar_usuarios(self) -> list[Usuario]:
+        with ConexaoBD() as db:
+            usuarios = (
+                db.sessao
+                .query(Usuario)
+                .all()
+            )
+            return usuarios

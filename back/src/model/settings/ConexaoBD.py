@@ -4,10 +4,10 @@ from back.src.model.settings.Base import Base
 
 class ConexaoBD:
     def __init__(self):
-        self.__string_conexao = "sqlite:///back/database/devfood.db"
+        self.__string_conexao = 'mysql+mysqlconnector://meu_usuario:minha_senha@localhost:3307/meu_banco'
         self.__motor_conexao = self.__criar_conexao()
         self.sessao = None
-        # Base.metadata.create_all(self.__motor_conexao) # Para criar as tabelas
+        Base.metadata.create_all(self.__motor_conexao) # Para criar as tabelas
 
     def __criar_conexao(self):
         return create_engine(self.__string_conexao)
