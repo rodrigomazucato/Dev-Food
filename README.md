@@ -13,8 +13,7 @@
 - [Como Usar](#como-usar)
 - [Roadmap](#roadmap)
 - [Contribuição](#contribuição)
-- [Licença](#licença)
-- [Contato](#contato)
+- [Integrantes](#integrantes)
 
 ## 📝 Sobre o Projeto
 
