@@ -110,7 +110,7 @@ O DevFood é baseado em uma arquitetura modular, separando o frontend e o backen
 1. Entre no diretório do frontend:
 
    ```sh
-   cd frontend
+   cd front
    ```
 
 2. Instale as dependências:
