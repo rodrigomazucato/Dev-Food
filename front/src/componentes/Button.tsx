@@ -14,7 +14,7 @@ export default function Button({
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }) {
   const defaultButtonClasses =
-    "font-roboto-condensed font-medium p-4 m-2 rounded-sm";
+    "font-roboto-condensed font-medium p-4 rounded-sm";
 
   const variants = {
     filled: {

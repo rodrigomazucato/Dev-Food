@@ -4,7 +4,7 @@
 body{
   width: 80%;
 
-  p, h1, h2, h3, input, select{
+  p, h1, h2, h3, input, select, legend{
     color: var(--color-blue);
     font-family: var(--font-roboto-condensed);
   }
@@ -36,8 +36,8 @@ body{
 
 
   /* Variaveis das CORES  */
-  --color-gray-medio: #a9a9a9;
   --color-gray-claro: #f1f1f1;
+  --color-gray-medio: #a9a9a9;
   --color-green: #b5c865;
   --color-blue: #374957;
   --color-brown-ligth: #fdedee;
