@@ -32,7 +32,7 @@ export default function Cadastro() {
   }
 
   return (
-    <div className="space-y-4 p-8 mt-6 bg-white rounded-md shadow flex flex-col w-100">
+    <form className="space-y-4 p-8 mt-6 bg-white rounded-md shadow flex flex-col w-100" onSubmit={handleSubmit}>
        <legend className="text-center">
         Falta pouco para matar sua fome!
       </legend>
@@ -43,7 +43,7 @@ export default function Cadastro() {
       <Button variant="filled" onClick={handleSubmit} >
         Continuar
       </Button>
-    </div>
+    </form>
   );
 }
 
