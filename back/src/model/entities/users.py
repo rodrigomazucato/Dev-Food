@@ -1,7 +1,7 @@
+from src.model.configs.base import Base
 from sqlalchemy import Column, Integer, String, Boolean
-from src.model.settings.Base import Base
 
-class Usuario(Base):
+class User(Base):
     __tablename__ = "Usuario"
     id = Column(Integer, primary_key=True, autoincrement=True)
     nome = Column(String(50))
