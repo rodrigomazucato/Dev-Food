@@ -205,3 +205,14 @@ sudo systemctl restart docker
 docker-compose down
 docker-compose up -d
 ```
+
+Iniciar um container: docker start mysql_container
+Visualizar o container rodando: docker ps
+Executar o bash do container: docker exec -it mysql_container bash
+Entrar no Mysql: mysql -u meu_usuario -p
+Inserir a senha: minha_senha
+Listar os bancos de dados: SHOW DATABASES;
+Utilizar o banco de dados: USE meu_banco;
+Listar as tabelas do banco: SHOW TABLES;
+Parar um container: docker stop mysql_container
+
