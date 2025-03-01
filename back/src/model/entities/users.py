@@ -14,3 +14,11 @@ class User(Base):
             f"{self.id} | {self.nome} | {self.email} | "
             f"{self.senha} | {'Admin' if self.is_admin else 'User'}"
         )
+    
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "nome": self.nome,
+            "email": self.email,
+            "is_admin": bool(self.is_admin),
+        }

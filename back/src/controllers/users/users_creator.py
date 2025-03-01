@@ -2,7 +2,6 @@ from src.model.repositories.interfaces.iusers_repository import IUsersRepository
 from src.http_types.http_request import HttpRequest
 from src.http_types.http_response import HttpResponse
 
-
 class UsersCreator:
     def __init__(self, users_repo: IUsersRepository):
         self.__users_repo = users_repo
