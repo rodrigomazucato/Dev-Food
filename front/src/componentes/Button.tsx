@@ -5,7 +5,7 @@ export default function Button({
   color = "default",
   variant = "filled",
   img = false,
-  onClick
+  onClick,
 }: {
   children: React.ReactNode;
   color?: IButtonPropsColors;
@@ -43,8 +43,8 @@ export default function Button({
   };
   return (
     <button
-    className={`${defaultButtonClasses} ${variants[variant][color]}`} 
-    onClick={onClick} 
+      className={`${defaultButtonClasses} ${variants[variant][color]}`}
+      onClick={onClick}
     >
       {img ? <img src="img/google.svg" alt="" className="w-6 pr-2" /> : null}
       {children}
