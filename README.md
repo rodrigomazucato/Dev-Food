@@ -189,9 +189,29 @@ SELECT * FROM nome_da_tabela LIMIT 10;
 
 ---
 
-## 🔄 7️⃣ Reiniciando o Docker e Containers
+## 🔄 7️⃣ Encerrando e Reiniciando Containers
 
-Se houver problemas com permissões ou conexão, tente:
+### 🔹 Parar um container
+
+```bash
+docker stop mysql_container
+```
+
+### 🔹 Iniciar um container parado
+
+```bash
+docker start mysql_container
+```
+
+### 🔹 Derrubar e recriar os containers
+
+```bash
+docker-compose down
+```
+
+```bash
+docker-compose up -d
+```
 
 ### 🔹 Reiniciar o serviço do Docker
 
@@ -199,20 +219,13 @@ Se houver problemas com permissões ou conexão, tente:
 sudo systemctl restart docker
 ```
 
-### 🔹 Parar e iniciar os containers novamente
+### 🔹 Sair do MySQL
 
-```bash
-docker-compose down
-docker-compose up -d
+```sql
+EXIT;
 ```
 
-Iniciar um container: docker start mysql_container
-Visualizar o container rodando: docker ps
-Executar o bash do container: docker exec -it mysql_container bash
-Entrar no Mysql: mysql -u meu_usuario -p
-Inserir a senha: minha_senha
-Listar os bancos de dados: SHOW DATABASES;
-Utilizar o banco de dados: USE meu_banco;
-Listar as tabelas do banco: SHOW TABLES;
-Parar um container: docker stop mysql_container
+---
+
+Este guia cobre os passos essenciais para rodar um container MySQL usando Docker no Linux, garantindo que tudo esteja configurado corretamente do início ao fim.
 
