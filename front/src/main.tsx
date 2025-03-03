@@ -20,10 +20,6 @@ const router = createBrowserRouter([
     path: "/cadastro",
     element: <Cadastro />,
   },
-  {
-    path: "/cadastro-endereco",
-    element: <CadastroEndereco />,
-  },
 ]);
 
 createRoot(document.getElementById("root")!).render(
