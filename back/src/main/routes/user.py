@@ -1,7 +1,5 @@
 from flask import Blueprint, jsonify, request
 
-user_route_bp = Blueprint('user_route', __name__)
-
 from src.validators.users_creator_validator import users_creator_validator
 
 from src.http_types.http_request import HttpRequest
@@ -12,6 +10,8 @@ from src.controllers.users.users_filter import UsersFilter
 from src.controllers.users.users_editor import UsersEditor
 from src.controllers.users.users_remover import UsersRemover
 from src.model.repositories.users_repository import UsersRepository
+
+user_route_bp = Blueprint('user_route', __name__)
 
 
 @user_route_bp.route('/user', methods=['POST'])

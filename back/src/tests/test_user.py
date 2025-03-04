@@ -12,11 +12,13 @@ def test_insert_user():
         }
     db.create_user(**data)
 
+
 #@pytest.mark.skip("Select in DB")
 def test_get_user_by_id():
     user_id = 1
     user = db.get_user_by_id(user_id)
     print(user)
+
 
 #@pytest.mark.skip("Select All in DB")
 def test_list_all_users():

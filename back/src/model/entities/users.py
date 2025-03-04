@@ -2,13 +2,16 @@ from src.model.configs.base import Base
 from sqlalchemy import Column, Integer, String, Boolean
 
 class User(Base):
+
+    
     __tablename__ = "Usuario"
     id = Column(Integer, primary_key=True, autoincrement=True)
     nome = Column(String(50))
     email = Column(String(50), unique=True)
     senha = Column(String(12))
-    is_admin = Boolean
-    #is_admin = Column(Boolean)
+    is_admin = Column(Boolean)
+    #is_admin = Boolean
+
 
     def __repr__(self):
         return (
@@ -16,6 +19,7 @@ class User(Base):
             f"{self.senha} | {'Admin' if self.is_admin else 'User'}"
         )
     
+
     def to_dict(self):
         return {
             "id": self.id,
