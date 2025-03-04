@@ -31,3 +31,46 @@ class UsersRepository(IUsersRepository):
                 .all()
             )
             return users
+        
+    def get_user_by_email(self, user_email: str) -> User:
+        with DBConnectionHandler() as db:
+            user = (
+                db.session
+                .query(User)
+                .filter(User.email == user_email)
+                .one_or_none()
+            )
+            return user
+    
+    def update_user(self, user_id: int, nome: str, email: str, senha: str, is_admin: bool) -> None:
+        with DBConnectionHandler() as db:
+            try:
+                user = (
+                    db.session
+                    .query(User)
+                    .filter(User.id == user_id)
+                    .one_or_none()
+                )
+                user.nome = nome
+                user.email = email
+                user.senha = senha
+                user.is_admin = is_admin
+                db.session.commit()
+            except Exception as exception:
+                db.session.rollback()
+                raise exception
+    
+    def delete_user(self, user_id: int) -> None:
+        with DBConnectionHandler() as db:
+            try:
+                user = (
+                    db.session
+                    .query(User)
+                    .filter(User.id == user_id)
+                    .one_or_none()
+                )
+                db.session.delete(user)
+                db.session.commit()
+            except Exception as exception:
+                db.session.rollback()
+                raise exception

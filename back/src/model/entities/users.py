@@ -8,6 +8,7 @@ class User(Base):
     email = Column(String(50), unique=True)
     senha = Column(String(12))
     is_admin = Boolean
+    #is_admin = Column(Boolean)
 
     def __repr__(self):
         return (

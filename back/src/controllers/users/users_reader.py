@@ -7,7 +7,8 @@ class UsersReader:
     def __init__(self, users_repo: IUsersRepository):
         self.__users_repo = users_repo
 
-    def get_all_users(self, http_request: HttpRequest) -> HttpResponse:
+
+    def get_all_users(self) -> HttpResponse:
         users = self.__users_repo.list_users()
 
         if not users:
@@ -15,9 +16,18 @@ class UsersReader:
 
         return self.__format_response(users)
 
+
     def __format_response(self, users) -> HttpResponse:
-        users_data = [user.to_dict() for user in users]
-        
+        users_data = [
+            {
+                "id": user.id,
+                "nome": user.nome,
+                "email": user.email,
+                "is_admin": bool(user.is_admin),
+            }
+            for user in users
+        ]   
+
         return HttpResponse(
             body={
                 "data": {
