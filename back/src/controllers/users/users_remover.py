@@ -2,9 +2,11 @@ from src.model.repositories.interfaces.iusers_repository import IUsersRepository
 from src.http_types.http_request import HttpRequest
 from src.http_types.http_response import HttpResponse
 
+
 class UsersRemover:
     def __init__(self, users_repo: IUsersRepository):
         self.__users_repo = users_repo
+
 
     def delete_user(self, http_request: HttpRequest) -> HttpResponse:
         user_id = int(http_request.params["id"])
