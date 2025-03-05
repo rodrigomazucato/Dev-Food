@@ -2,6 +2,7 @@ import { IButtonPropsColors, IButtonPropsVariant } from "../interface/IButton";
 
 export default function Button({
   children,
+
   color = "default",
   variant = "filled",
   img = false,

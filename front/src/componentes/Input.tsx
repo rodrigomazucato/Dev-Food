@@ -1,6 +1,13 @@
 import { IInputProps } from "../interface/IInputs";
 
-export default function Input({ label, id, type = "text", value, placeholder,  onChange  }: IInputProps) {
+export default function Input({
+  label,
+  id,
+  type = "text",
+  value,
+  placeholder,
+  onChange,
+}: IInputProps) {
   return (
     <div>
       <div className="flex flex-col">

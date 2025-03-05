@@ -22,7 +22,7 @@ export default function Cadastro() {
   };
 
   function handleSubmit() {
-    console.log('oie')
+    console.log("oie");
     localStorage.setItem("nomeUsuario", nome);
     localStorage.setItem("nomeEmail", email);
 
@@ -33,18 +33,34 @@ export default function Cadastro() {
 
   return (
     <div className="space-y-4 p-8 mt-6 bg-white rounded-md shadow flex flex-col w-100">
-       <legend className="text-center">
-        Falta pouco para matar sua fome!
-      </legend>
-      <Input label="Informe o seu nome:" id="nome" type="text" value={nome} placeholder={"Fulando de tal"} onChange={setNome} />
-      <Input label="Informe o seu email:" id="email" type="email" value={email} placeholder={"fulando@exemplo.com"} onChange={setEmail} />
-      <Input label="Informe sua Senha:" id="senha" type="text" value={senha} onChange={setSenha} />
+      <legend className="text-center">Falta pouco para matar sua fome!</legend>
+      <Input
+        label="Informe o seu nome:"
+        id="nome"
+        type="text"
+        value={nome}
+        placeholder={"Fulando de tal"}
+        onChange={setNome}
+      />
+      <Input
+        label="Informe o seu email:"
+        id="email"
+        type="email"
+        value={email}
+        placeholder={"fulando@exemplo.com"}
+        onChange={setEmail}
+      />
+      <Input
+        label="Informe sua Senha:"
+        id="senha"
+        type="text"
+        value={senha}
+        onChange={setSenha}
+      />
 
-      <Button variant="filled" onClick={handleSubmit} >
+      <Button variant="filled" onClick={handleSubmit}>
         Continuar
       </Button>
     </div>
   );
 }
-
-
