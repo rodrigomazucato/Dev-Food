@@ -64,12 +64,12 @@ O DevFood é baseado em uma arquitetura modular, separando o frontend e o backen
 
 ## 🚀 Instalação
 
-### Pré-requisitos
+### ✅ Pré-requisitos
 
 - Python 3.9+ instalado
 - Node.js instalado
 
-### Backend (Flask)
+### ✅ Backend (Flask)
 
 1. Clone o repositório:
 
@@ -103,7 +103,7 @@ O DevFood é baseado em uma arquitetura modular, separando o frontend e o backen
    flask run
    ```
 
-### Frontend (Vite + Tailwind)
+### ✅ Frontend (Vite + Tailwind)
 
 1. Entre no diretório do frontend:
 
